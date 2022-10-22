@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import Box from "./components/Box";
+import Header from "./components/Header";
+import Loading from "./components/Loading";
+import context from "./context/context" ;
 
 function App() {
+
+  const word = useContext(context)[0];
+  const loading = useContext(context)[2];
+  const submit = useContext(context)[4];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Header />
+
+      <div className='bg-teal-900 my-0 min-h-[60vh] py-8'>
+
+        {word && submit && !loading && (
+          <Box word={word} />
+        )}
+
+        {loading && (
+          <Loading />
+        )}
+
+      </div>
+
+    </>
   );
 }
 
