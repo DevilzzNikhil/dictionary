@@ -9,8 +9,15 @@ function Header() {
   const [word, setWord, loading, setLoading, submit, setSubmit] = useContext(Context);
 
   const handleChange = (e) => {
-    setSubmit(false);
-    setWord(e.target.value);
+    setSubmit(false)
+    let wd = e.target.value ;
+    let wordArray = wd.split(' ');
+    if( wordArray.length > 1)
+    {
+      alert("Please Enter One Word Only")
+    }
+    wd = wordArray[0];
+    setWord(wd);
   }
 
   const handleSubmit = (e) => {
@@ -35,6 +42,8 @@ function Header() {
             <input type="text" value={word} onChange={handleChange} className='flex text-black flex-grow flex-shrink rounded-l-md h-full px-4 focus:outline-none ' />
             <FaSearch className='h-17 p-4 cursor-pointer' size={50} onClick={handleSubmit} />
           </div>
+          <p className='text-white font-extrabold'> &#123; Search For A Word : {word ? word : 'eg-HELLO'} &#125;</p>
+          
         </div>
       </header>
       

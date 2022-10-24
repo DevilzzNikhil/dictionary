@@ -4,6 +4,8 @@ import Context from '../context/context';
 import Example from './Example';
 import Defination from './Defination';
 import Error from './Error';
+import Synonyms from './Synonyms';
+import Antonyms from './Antonyms';
 //import Synonyms from './Synonyms';
 
 function Box() {
@@ -30,7 +32,8 @@ function Box() {
           <audio className='w-full' controls src={audio}></audio>
           <Defination key={response.meanings} response={response} />
           <Example response={response} />
-          {/* <Synonyms response={response}/> */}
+          <Synonyms response={response}/>
+          <Antonyms response={response}/>
         </div>
       ))}
 
