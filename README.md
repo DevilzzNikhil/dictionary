@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Urban Dictionary App 
+**This project is made for udyam frontend task. It is Deployed on [URBAN DICTIONARY](https://urban-dictionary.vercel.app/) with the help of Netlify.**
+![image](https://user-images.githubusercontent.com/100992874/197515874-805ab96a-abb8-41bc-b69a-29d89b382560.png)
+## How to start in local 
+- First fork the repo 
+- Then clone it using:
+  ### **`git clone {Your forked repo link} `**
+- Open The Project in Vs Code
+- Install the dependencies using:
+  ### **`npm install`**
+- Run the Project using:
+  ### **`npm start`**
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/100992874/197516007-b6656b6a-d796-4640-a90e-f425f5078422.png)
 
-## Available Scripts
+## About The Project
+This Project uses an external [API](https://dictionaryapi.dev/) for data. It shows the synonyms antonyms examples and meanings in different part of speech of the word. It is responsive to all kind of devices. It has a Simple UI/UX Design but good for looking. It redirects the user to 404 page on search anything else.
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/100992874/197516063-eb3cc8bb-99ec-4f88-bbb4-4dae212948a4.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Thoughts
+In futute I would love to implement add to bookmark, word of the day, login / logout features as well . Adding dark light mode .
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/100992874/197515920-89a72464-e8a6-43cf-9a39-6681e718717e.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
