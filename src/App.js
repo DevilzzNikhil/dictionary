@@ -1,34 +1,21 @@
-import { useContext } from "react";
-import Box from "./components/Box";
-import Header from "./components/Header";
-import Loading from "./components/Loading";
-import context from "./context/context" ;
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
+import Home from "./pages/Home";
+import NotFound from './pages/NotFound'
 
-function App() {
 
-  const word = useContext(context)[0];
-  const loading = useContext(context)[2];
-  const submit = useContext(context)[4];
-
+export default function App() {
   return (
-    <>
+    <Router>
 
-      <Header />
-
-      <div className='bg-teal-900 my-0 min-h-[60vh] py-8'>
-
-        {word && submit && !loading && (
-          <Box word={word} />
-        )}
-
-        {loading && (
-          <Loading />
-        )}
-
-      </div>
-
-    </>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="*" element={<NotFound/>} />
+        </Routes>
+    </Router>
   );
 }
-
-export default App;
